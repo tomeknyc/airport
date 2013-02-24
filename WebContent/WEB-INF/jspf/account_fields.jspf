@@ -1,0 +1,31 @@
+<tr>
+  <td>Name:</td>
+  <td>
+    <spring:nestedPath path="name">
+    <spring:bind path="first">
+    <input type="text" name="${status.expression}" value="${status.value}" />
+    </spring:bind>
+    <spring:bind path="last">
+    <input type="text" name="${status.expression}" value="${status.value}" />
+    </spring:bind>
+    </spring:nestedPath>
+  </td>
+</tr>
+
+<tr>
+  <td>Username:</td>
+  <td>
+  <spring:bind path="username">
+  <input type="text" name="${status.expression}" value="${status.value}" />
+  </spring:bind>
+  </td>
+</tr>
+
+<tr>
+  <td>Password:</td>
+  <td>
+  <spring:bind path="password">
+  <input type="text" name="${status.expression}" value="${status.value}" />
+  </spring:bind>
+  </td>
+</tr>
